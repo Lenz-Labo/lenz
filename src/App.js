@@ -102,7 +102,7 @@ const LogoWrapper = styled.div`
   @keyframes move {
     0% {
       opacity: 0;
-      transform: translateX(-5px);
+      transform: translateX(50px);
     }
     100% {
       opacity: 1;

@@ -121,9 +121,13 @@ export const ResetStyle = createGlobalStyle`
     padding-left: 30px;
     padding-right: 30px;
 
+    &.sm {
+      max-width: 800px;
+    }
+
     @media screen and (min-width: 768px) {
-      padding-left: 60px;
-      padding-right: 60px;
+      padding-left: 50px;
+      padding-right: 50px;
     }
   }
 
