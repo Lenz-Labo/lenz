@@ -27,6 +27,7 @@ export const ResetStyle = createGlobalStyle`
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+    box-sizing: border-box;
   }
   body {
     line-height: 1;
@@ -88,5 +89,92 @@ export const ResetStyle = createGlobalStyle`
   }
   input, select {
     vertical-align:middle;
+  }
+
+  html {
+    font-family: 'Roboto Mono', monospace, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", sans-serif;
+    font-weight: 500;
+    color: #161617;
+    font-size: 62.5%;
+  }
+
+  body {
+    font-size: 1.4rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.6rem;
+    }
+
+    &.no-scroll {
+      overflow: hidden;
+    }
+  }
+  img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: bottom;
+  }
+
+  .container {
+    max-width: 1020px;
+    margin:0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+
+  .black {
+    background: #161617;
+    color: #fff;
+    position: relative;
+    margin-bottom: 50px;
+
+    .main-title {
+      color: #fff;
+    }
+
+    &::before {
+      content: '';
+      width: 100%;
+      display: block;
+      bottom: -7px;
+      position: absolute;
+      border-bottom: 5px solid #161617;
+    }
+    &::after {
+      content: '';
+      width: 100%;
+      display: block;
+      bottom: -11px;
+      position: absolute;
+      border-bottom: 2px solid #161617;
+    }
+  }
+  .main-title {
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 30px;
+    color: #303134;
+    letter-spacing: 0.1em;
+
+    &.pt-lg {
+      padding-top: 50px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 50px 70px;
+      font-size: 4rem;
+
+      &.pt-lg {
+        padding-top: 80px;
+      }
+    }
+  }
+  .center {
+    text-align: center;
   }
 `;

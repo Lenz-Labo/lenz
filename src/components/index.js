@@ -1,2 +1,4 @@
 export { default as Header } from "./Header";
 export { default as Footer } from "./Footer";
+export { default as KeyVisual } from "./KeyVisual";
+export { default as Logo } from "./Logo";
