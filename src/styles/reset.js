@@ -159,11 +159,11 @@ export const ResetStyle = createGlobalStyle`
     }
   }
   .main-title {
-    font-size: 2.6rem;
+    font-size: 3rem;
     text-align: center;
     padding: 30px;
     color: #303134;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.125em;
 
     &.pt-lg {
       padding-top: 50px;
@@ -171,7 +171,7 @@ export const ResetStyle = createGlobalStyle`
 
     @media screen and (min-width: 768px) {
       padding: 50px 70px;
-      font-size: 4rem;
+      font-size: 4.6rem;
 
       &.pt-lg {
         padding-top: 80px;

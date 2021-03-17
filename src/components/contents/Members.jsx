@@ -11,8 +11,8 @@ const Members = () => {
                 <Wrapper>
                     <section className="panel">
                     <picture className="panel__img">
-                        <source srcSet="/img/dummy.jpg" media="(max-width: 798px)" />
-                        <img src="/img/dummy.jpg" alt=""/>
+                        <source srcSet="./img/dummy.jpg" media="(max-width: 798px)" />
+                        <img src="./img/dummy.jpg" alt=""/>
                         </picture>
                         <div className="panel__main">
                             <p className="name">Yuki Suzuki</p>
@@ -23,8 +23,8 @@ const Members = () => {
                         </section>
                         <section className="panel">
                         <picture className="panel__img">
-                            <source srcSet="/img/dummy.jpg" media="(max-width: 798px)" />
-                            <img src="/img/dummy.jpg" alt=""/>
+                            <source srcSet="./img/dummy.jpg" media="(max-width: 798px)" />
+                            <img src="./img/dummy.jpg" alt=""/>
                         </picture>
                         <div className="panel__main">
                             <p className="name">Yuriko Kamimori</p>

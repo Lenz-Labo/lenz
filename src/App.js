@@ -33,7 +33,7 @@ const Wrapper = styled.div`
     backface-visibility: hidden;
   }
   .blur {
-    filter: blur(4px);
+    filter: blur(7px);
     height: 100vh;
   }
 `;

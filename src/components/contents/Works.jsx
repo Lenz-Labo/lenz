@@ -40,31 +40,31 @@ const Works = () => {
             <Wrapper>
             <Slider {...settings}>
                 <section>
-                    <img src="/img/dummy.jpg" alt=""/>
+                    <img src="./img/dummy.jpg" alt=""/>
                     <p>私たちはWeb制作のプロです。Webサイトを中心としたデジタルコンテンツ制作を得意としています。</p>
                 </section>
                 <section>
-                    <img src="/img/dummy.jpg" alt=""/>
+                    <img src="./img/dummy.jpg" alt=""/>
                     <p>私たちはWeb制作のプロです。Webサイトを中心としたデジタルコンテンツ制作を得意としています。</p>
                 </section>
                 <section>
-                    <img src="/img/dummy.jpg" alt=""/>
+                    <img src="./img/dummy.jpg" alt=""/>
                     <p>私たちはWeb制作のプロです。Webサイトを中心としたデジタルコンテンツ制作を得意としています。</p>
                 </section>
                 <section>
-                    <img src="/img/dummy.jpg" alt=""/>
+                    <img src="./img/dummy.jpg" alt=""/>
                     <p>私たちはWeb制作のプロです。Webサイトを中心としたデジタルコンテンツ制作を得意としています。</p>
                 </section>
                 <section>
-                    <img src="/img/dummy.jpg" alt=""/>
+                    <img src="./img/dummy.jpg" alt=""/>
                     <p>私たちはWeb制作のプロです。Webサイトを中心としたデジタルコンテンツ制作を得意としています。</p>
                 </section>
                 <section>
-                    <img src="/img/dummy.jpg" alt=""/>
+                    <img src="./img/dummy.jpg" alt=""/>
                     <p>私たちはWeb制作のプロです。Webサイトを中心としたデジタルコンテンツ制作を得意としています。</p>
                 </section>
                 <section>
-                    <img src="/img/dummy.jpg" alt=""/>
+                    <img src="./img/dummy.jpg" alt=""/>
                     <p>私たちはWeb制作のプロです。Webサイトを中心としたデジタルコンテンツ制作を得意としています。</p>
                 </section>
 

@@ -9,7 +9,7 @@ const Message = () => {
             <div className="container">
                 <Wrapper>
                     <picture>
-                        <img src="/img/dummy.jpg" alt=""/>
+                        <img src="./img/dummy.jpg" alt=""/>
                     </picture>
                     <div class="content-main">
                         <h2>Lenz はこうして生まれました</h2>

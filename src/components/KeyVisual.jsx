@@ -8,8 +8,8 @@ const KeyVisual = () => {
   return (
     <Visual>
       <picture>
-        <source srcset="/img/keyvisual.jpg" media="(max-width: 798px)" />
-        <img src="/img/keyvisual-pc.jpg" alt="" height="" width="" />
+        <source srcset="./img/keyvisual.jpg" media="(max-width: 798px)" />
+        <img src="./img/keyvisual-pc.jpg" alt="" height="" width="" />
       </picture>
       <Logo />
     </Visual>

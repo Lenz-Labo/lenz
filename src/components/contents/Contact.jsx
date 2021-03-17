@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import styled from 'styled-components';
 
@@ -13,18 +13,18 @@ const Contact = () => {
                         <dl>
                             <dt>Name（名前）<span>必須</span></dt>
                             <dd>
-                                <input type="text" name="name"/>
+                                <input type="text" name="name" placeholder="山田 太郎"/>
                             </dd>
                             <dt>Mail Address（メールアドレス）<span>必須</span></dt>
                             <dd>
-                                <input type="email" name="mail"/>
+                                <input type="email" name="mail" placeholder="example@gmail.com"/>
                             </dd>
                             <dt>Message（ご依頼・質問内容）<span>必須</span></dt>
                             <dd>
-                                <textarea col="10" name="message"></textarea>
+                                <textarea rows="10" name="message" placeholder="200文字以内"></textarea>
                             </dd>
                         </dl>
-                        <input type="checkbox" id="agreement"/><label for="agreement">下記プライバシーポリシーに同意の上、送信する。</label>
+                        <p className="checkbox"><input type="checkbox" id="agreement"/><label for="agreement">下記プライバシーポリシーに同意の上、送信する。</label></p>
                         <div className="privacy-policy">
                             <h3>プライバシーポリシー</h3>
                             <h4>個人情報の利用目的</h4>
@@ -52,7 +52,7 @@ const Contact = () => {
 
                             <p>修正された最新のプライバシーポリシーは常に本ページにて開示されます。</p>
                         </div>
-                        <button type="button">SEND</button>
+                        <button type="button" disabled>SEND</button>
                     </div>
                 </Wrapper>
             </section>
@@ -109,11 +109,53 @@ const Wrapper = styled.div`
                 font-family: "Roboto Mono", monospace, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", sans-serif;
             }
         }
+
+
+    }
+    .checkbox {
+        position: relative;
+        padding-left: 30px;
+        input[type="checkbox"] {
+            display: none;
+
+            &:checked + label {
+                &::after {
+                    opacity: 1;
+                }
+            }
+            & + label {
+
+                &::before {
+                    left: 0;
+                    top: 0;
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background: #fff;
+                }
+                &::after {
+                    left: 4px;
+                    top: -3px;
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    width: 10px;
+                    height: 16px;
+                    border-right: #E20E4F solid 2px;
+                    border-bottom: #E20E4F solid 2px;
+                    transform: rotate(45deg);
+                    opacity: 0;
+                    transition: .3s;
+                }
+            }
+        }
     }
 
     .privacy-policy {
-        margin-top: 10px;
-        height: 100px;
+        margin-top: 15px;
+        height: 150px;
         overflow: scroll;
         margin-bottom: 30px;
         padding: 20px 30px;
@@ -148,6 +190,11 @@ const Wrapper = styled.div`
         outline: none;
         padding: 15px;
         position: relative;
+
+        &:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
 
         @media screen and (min-width: 768px) {
             font-size: 2.3rem;
@@ -186,6 +233,7 @@ const Wrapper = styled.div`
                 height: 25px;
             }
         }
+
         &:hover {
             transition: .3s;
             cursor: pointer;

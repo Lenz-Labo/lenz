@@ -15,7 +15,7 @@ const Activity = () => {
                         <p>日本には日々もったいないが生まれています。<br/>たとえばお洋服リサイクルサービスがありますが、わずかなシミや穴のせいで廃棄処分されてしまうそうです。<br/>フィリピン・セブ島の貧困層の子どもたちは不衛生な場所でほぼ裸で過ごします。1着でもあれば病気や怪我を防ぐことができます。<br/>捨てられてしまうお洋服をわずかな支援で子どもたちに届けられたら素敵だと思いませんか？<br/>現地フィリピンにいる私たちだからできることをやっています。</p>
                         </div>
                         <picture className="panel__img">
-                            <img src="/img/dummy.jpg" alt=""/>
+                            <img src="./img/dummy.jpg" alt=""/>
                         </picture>
                     </section>
                     <section className="panel">
@@ -24,7 +24,7 @@ const Activity = () => {
                         <p>私たちの得意なことはWebで情報発信をすること。<br/>ブログやメディアで海外生活やITに関して情報発信しています。</p>
                         </div>
                         <picture className="panel__img">
-                            <img src="/img/dummy.jpg" alt=""/>
+                            <img src="./img/dummy.jpg" alt=""/>
                         </picture>
 
                     </section>
@@ -38,8 +38,11 @@ export default Activity;
 
 const Wrapper = styled.div`
     margin-bottom: 80px;
+    margin-top: 20px;
+
     @media screen and (min-width: 768px) {
         margin-bottom: 150px;
+        margin-top: 50px;
     }
 
     section {
